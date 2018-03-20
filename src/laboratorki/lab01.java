@@ -29,4 +29,9 @@ public class lab01 {
     System.out.println("User ID="+a+";Password="+b+";\n" +
               "Host="+c+";Port="+d+";Database="+e+";");
     }
+     public  static void task7474 (String a, String b, String c){
+         System.out.println("Квадратное уравнение: "+a+"*x*x + "+b+"*x + "+c+" = 0\n" +
+                 "Его дискриминант: d = "+b+"*"+b+" - 4*"+a+"*"+c);
+     }
+
 }

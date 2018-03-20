@@ -1,0 +1,94 @@
+package lab12;
+
+import laboratorki.lab02;
+
+public class task2354 {
+    public static void main(String[] args) {
+        System.out.println("Задание 4411");
+        double r = lab02.task4411(11.13);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task4411(-7979);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task4411(0);
+        System.out.printf("%.4f\n", r);
+        System.out.println("Задание 8428");
+        r = lab02.task8428(45);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task8428(1125);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task8428(0);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task8428(360);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task8428(90);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task8428(2000);
+        System.out.printf("%.4f\n ", r);
+        System.out.println("Задание 1262");
+        r = lab02.task1262(7583);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task1262(200);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task1262(360);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task1262(90);
+        System.out.printf("%.4f\n ", r);
+        System.out.println("Задание 2790");
+        r = lab02.task2790(6997);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task2790(31);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task2790(0);
+        System.out.printf("%.4f\n ", r);
+        System.out.println("Задание 9164");
+        r = lab02.task9164(90, 90);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task9164(90, 0);
+        System.out.printf("%.4f\n ", r);
+        r = lab02.task9164(7559, 7549);
+        System.out.printf("%.4f\n ", r);
+        System.out.println("Задача 5063");
+        r = lab02.task5063(365);
+        System.out.println(r);
+        r = lab02.task5063(45);
+        System.out.println(r);
+        r = lab02.task5063(1125);
+        System.out.println(r);
+        r = lab02.task5063(1500);
+        System.out.println(r);
+        r = lab02.task5063(2000);
+        System.out.println(r);
+        r = lab02.task5063(0);
+        System.out.println(r);
+        r = lab02.task5063(360);
+        System.out.println(r);
+        System.out.println("Задача 7711");
+        r = lab02.task7711(45);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task7711(1125);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task7711(7639);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task7711(360);
+        System.out.printf("%.4f\n", r);
+        r = lab02.task7711(90);
+        System.out.printf("%.4f\n", r);
+        System.out.println("Задача 5662");
+        String t = lab02.task5662(1, 2, 3);
+        System.out.println(t);
+        t = lab02.task5662(11, 13, 19);
+        System.out.println(t);
+        t = lab02.task5662(3, 17, 5);
+        System.out.println(t);
+        t = lab02.task5662(5, 31, 29);
+        System.out.println(t);
+        t = lab02.task5662(3, 6, 3);
+        System.out.println(t);
+        t = lab02.task5662(1, 2, 1);
+        System.out.println(t);
+        t = lab02.task5662(0, 7, 13);
+        System.out.println(t);
+
+
+    }
+}
