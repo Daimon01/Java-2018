@@ -105,5 +105,60 @@ public class task2030 {
         else{
             System.out.println("Числа не равны друг другу");
         }
+        System.out.println("Задание 1999");
+        if (lab03.tsak1999(-3,2)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-2,2)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-1,2)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-3,1)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-2,1)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-1,1)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-3,0)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-2,0)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
+        if (lab03.tsak1999(-1,0)){
+            System.out.println("Принадлежит области");
+        }
+        else {
+            System.out.println("Не принадлнжит");
+        }
     }
 }
