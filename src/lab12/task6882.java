@@ -3,7 +3,6 @@ package lab12;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
 import laboratorki.lab06;
 
 public class task6882 {
@@ -12,20 +11,8 @@ public class task6882 {
             String filename = "res/files/task6882/test" + b + ".txt";
             File target = new File(filename);
             try {
-                Scanner reader = new Scanner(target);
-                    int a;
-                    String line = reader.nextLine();
-                    int i = Integer.parseInt(line);
-                    a = i;
-                    while (reader.hasNext()) {
-                        line = reader.nextLine();
-                        i = Integer.parseInt(line);
-                        if (i < a) {
-                            a = i;
-                        }
-                }
-                System.out.println(a);
-                reader.close();
+              int r = (int) lab06.proverka(target);
+                System.out.println(r);
             } catch (FileNotFoundException e) {
                 System.out.println("Файл не существует");
             } catch (NumberFormatException e) {

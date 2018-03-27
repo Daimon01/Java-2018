@@ -1,9 +1,11 @@
 package laboratorki;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class lab06 {
-    public static double proverka(){
+    public static double proverka(File target)throws FileNotFoundException{
         Scanner reader = new Scanner(target);
         int a;
         String line = reader.nextLine();
@@ -15,5 +17,8 @@ public class lab06 {
             if (i < a) {
                 a = i;
             }
-    }
+        }
+        reader.close();
+        return a;
+}
 }
