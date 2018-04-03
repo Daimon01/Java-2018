@@ -11,7 +11,7 @@ public class task6882 {
             String filename = "res/files/task6882/test" + b + ".txt";
             File target = new File(filename);
             try {
-              int r = (int) lab06.proverka(target);
+              int r = (int) lab06.proverka6882(target);
                 System.out.println(r);
             } catch (FileNotFoundException e) {
                 System.out.println("Файл не существует");
