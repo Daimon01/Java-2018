@@ -1,6 +1,6 @@
-package Lab14;
+package lab14;
 
-import Lab14.task7297.Interval;
+import lab14.task7297.Interval;
 
 /**
  * @author akryukov
@@ -54,7 +54,7 @@ public class Task7297 {
             } else {
                 System.out.println("Не содержит");
             }
-        } catch(IllegalStateException ex){
+        } catch(IllegalArgumentException ex){
             System.out.println(ex.getMessage());
         }
     }
