@@ -2,8 +2,8 @@ package lab14.task8403;
 
 /**
  * @author akryukov
- *         13.07.2017
- */
+        *         13.07.2017
+        */
 public class Point {
     public int x;
     public int y;
@@ -11,5 +11,6 @@ public class Point {
         int dx = px - x;
         int dy = py - y;
         return Math.sqrt(dx*dx + dy*dy);
+
     }
 }
