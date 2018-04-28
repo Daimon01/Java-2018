@@ -19,21 +19,30 @@ public class Task5032 {
         File target = new File(filename);
         Scanner reader = null;
         String line = null;
+        int action = 0;
+        Rectangle5032 r1 = new Rectangle5032();
+
         try {
             reader = new Scanner(target);
             line = reader.nextLine();
             String[] arrs = line.split(";");
-            Rectangle5032 r1 = new Rectangle5032();
-            int action = 0;
             if("shiftX".equals(arrs[0])){
                 int i = Integer.parseInt(arrs[1]);
                 r1.x = r1.x + i;
                 action ++;
+                if(r1.x<0){
+                   IllegalArgumentException ex = new IllegalArgumentException("Х не может быть отрицательным");
+                 throw ex;
+                }
             }
             if("shiftY".equals(arrs[0])){
                 int i = Integer.parseInt(arrs[1]);
                 r1.y = r1.y + i;
                 action ++;
+                if(r1.y<0){
+                    IllegalArgumentException ex = new IllegalArgumentException("Y не может быть отрицательным");
+                    throw ex;
+                }
             }
             if("stretchX".equals(arrs[0])){
                 int i = Integer.parseInt(arrs[1]);
@@ -52,11 +61,19 @@ public class Task5032 {
                     int i = Integer.parseInt(arrs[1]);
                     r1.x = r1.x + i;
                     action ++;
+                    if(r1.x<0){
+                        IllegalArgumentException ex = new IllegalArgumentException("X не может быть отрицательным");
+                        throw ex;
+                    }
                 }
                 if("shiftY".equals(arrs[0])){
                     int i = Integer.parseInt(arrs[1]);
                     r1.y = r1.y + i;
                     action ++;
+                    if(r1.y<0){
+                        IllegalArgumentException ex = new IllegalArgumentException("Y не может быть отрицательным");
+                        throw ex;
+                    }
                 }
                 if("stretchX".equals(arrs[0])){
                     int i = Integer.parseInt(arrs[1]);
@@ -70,25 +87,32 @@ public class Task5032 {
                 }
 
             }
+
+
+
+
+
             File write1 = new File("src/lab14/task5032/", "case6.html");
-            try {
-                PrintWriter pw = new PrintWriter(write1);
-                pw.print("<td class=\"preformatted\">\n" +
-                        "<p>Действий: "+action+"</p><p>Результат:</p>\n" +
-                        "<svg width=\"500\" height=\"350\">\n" +
-                        "<rect x=\"100\" y=\"100\" width=\"100\" height=\"100\" fill=\"transparent\" stroke=\"red\"></rect>" +
-                        "<rect x=\""+r1.x+"\" y=\""+r1.y+"\" width=\""+r1.width+"\" height=\""+r1.height+"\" fill=\"transparent\" stroke=\"black\">" +
-                        "</rect>\n"+"</svg></td>");
-                pw.close();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
+
+            PrintWriter pw = new PrintWriter(write1);
+            pw.print("<td class=\"preformatted\">\n" +
+                    "<p>Действий: "+action+"</p>\n" +
+                    "<p>Ошибка: "++
+                    "<p>Результат:</p>\n" +
+                    "<svg width=\"500\" height=\"350\">\n" +
+                    "<rect x=\"100\" y=\"100\" width=\"100\" height=\"100\" fill=\"transparent\" stroke=\"red\"></rect>" +
+                    "<rect x=\""+r1.x+"\" y=\""+r1.y+"\" width=\""+r1.width+"\" height=\""+r1.height+"\" fill=\"transparent\" stroke=\"black\">" +
+                    "</rect>\n"+"</svg></td>");
+            pw.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
         catch (FileNotFoundException e) {
             System.out.println("Файл не существует");
         }
-
-
+        catch (IllegalArgumentException ex){
+            String a = ex;
+        }
     }
 }
 
